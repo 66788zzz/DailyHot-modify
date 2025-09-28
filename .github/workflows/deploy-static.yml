@@ -42,4 +42,4 @@ jobs:
           git commit -m "deploy: $(date +'%Y-%m-%d %H:%M:%S %Z')"
           git push --force --quiet \
             "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" \
-            main:refs/heads/static
+            master:refs/heads/static
